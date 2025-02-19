@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9492483031955256"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فهرس الملخصات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* شريط متحرك */
+        .marquee-container {
+            width: 100%;
+            background-color: darkblue;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 1.5;
+            padding: 20px 0;
+            overflow: hidden;
+            position: relative;
+            height: 80px;
+        }
+
+        .marquee-text {
+            display: inline-block;
+            white-space: nowrap;
+            position: absolute;
+            left: -100%;
+            animation: marquee 10s linear infinite;
+            overflow: visible;
+        }
+
+        @keyframes marquee {
+            from {
+                left: -100%;
+            }
+            to {
+                left: 100%;
+            }
+        }
+
+        .container {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .subject-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 300px; /* زيادة العرض */
+            margin: 15px; /* زيادة المسافة بين الأزرار */
+            padding: 20px; /* زيادة الحشوة */
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px; /* زوايا أكثر استدارة */
+            font-size: 20px; /* زيادة حجم الخط */
+            transition: 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+        }
+
+        .subject-btn i {
+            margin-left: 10px;
+            font-size: 24px; /* زيادة حجم الأيقونات */
+        }
+
+        .subject-btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* زيادة الظل عند التمرير */
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="marquee-container">
+        <div class="marquee-text">📚 أهلاً وسهلاً بكم في الموقع 📚</div>
+    </div>
+
+    <div class="container">
+        <a href="خصوصية وأمن نظم المعلومات.html" class="subject-btn">
+            <i class="fas fa-shield-alt"></i> خصوصية وأمن نظم المعلومات
+        </a>
+        <a href="إدارة مراكز المعلومات.html" class="subject-btn">
+            <i class="fas fa-database"></i> إدارة مراكز المعلومات
+        </a>
+        <a href="نظم معلومات استراتيجية.html" class="subject-btn">
+            <i class="fas fa-chart-line"></i> نظم المعلومات الاستراتيجية
+        </a>
+        <a href="اتصالات وشبكات.html" class="subject-btn">
+            <i class="fas fa-network-wired"></i> اتصالات وشبكات
+        </a>
+        <a href="تصميم مواقع.html" class="subject-btn">
+            <i class="fas fa-code"></i> تصميم مواقع
+        </a>
+    </div>
+
+    <div class="footer">
+        جميع الحقوق محفوظة لدى <a href="#" target="_blank">التقنية اونلاين</a> &copy; 2025
+    </div>
+
+</body>
+
+</html>
