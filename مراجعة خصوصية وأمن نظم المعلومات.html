@@ -38,7 +38,7 @@
     #scrollToTopBtn {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    left: 20px; /* نقل الزر إلى الجهة اليسرى */
     padding: 10px 15px;
     font-size: 16px;
     background-color: #007bff;
@@ -51,6 +51,23 @@
 
 #scrollToTopBtn:hover {
     background-color: #0056b3;
+}
+
+#backButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; /* نقل الزر إلى الجهة اليمنى */
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backButton:hover {
+    background-color: #218838;
 }
     </style>
 </head>
@@ -511,8 +528,12 @@
         
         
         
-        
-        
+         <script>
+  function goBack() {
+      window.history.back(); // ترجع المستخدم إلى الصفحة السابقة
+  }
+</script>
+         <button id="backButton" onclick="goBack()">← رجوع</button>
         <script>
   // إظهار الزر عند التمرير لأسفل
   window.onscroll = function() {
@@ -530,6 +551,10 @@
   }
 </script>
         
+       
+        
         <button id="scrollToTopBtn" onclick="scrollToTop()">↑ الإنتقال للأعلى</button>
+        
+       
 </body>
 </html>
