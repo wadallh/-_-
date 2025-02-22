@@ -64,6 +64,66 @@
     <br><br>
     <a href="إدارة مراكز المعلومات.html" class="back-btn">🔙 العودة إلى المادة</a>
 
+ 
+ 
+        <!-- قسم التعليقات -->
+<div class="lecture-section" style="margin-bottom: 120px;">
+    <h2>المناقشة والتعليقات</h2>
+    
+    <!-- نموذج إضافة تعليق -->
+    <form id="commentForm">
+        <div style="margin: 15px 0;">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required 
+                   style="padding: 8px; width: 300px; border: 1px solid #ddd; border-radius: 4px;">
+        </div>
+        
+        <div style="margin: 15px 0;">
+            <label for="comment">التعليق:</label>
+            <textarea id="comment" name="comment" required 
+                      style="padding: 8px; width: 100%; height: 100px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+        </div>
+        
+        <button type="submit" class="button">إرسال التعليق</button>
+    </form>
+
+    <!-- قائمة التعليقات -->
+    <div id="comments-list" style="margin-top: 30px;">
+        <h3>التعليقات السابقة:</h3>
+        <!-- سيتم إضافة التعليقات هنا عبر الجافاسكريبت -->
+    </div>
+</div>
+
+<script>
+// دالة لإضافة التعليقات
+document.getElementById('commentForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const commentText = document.getElementById('comment').value;
+    
+    if (name && commentText) {
+        const commentDiv = document.createElement('div');
+        commentDiv.style.margin = '15px 0';
+        commentDiv.style.padding = '15px';
+        commentDiv.style.backgroundColor = '#f8f9fa';
+        commentDiv.style.borderRadius = '8px';
+        commentDiv.innerHTML = `
+            <strong>${name}:</strong>
+            <p>${commentText}</p>
+            <small style="color: #666;">${new Date().toLocaleString()}</small>
+        `;
+        
+        document.getElementById('comments-list').appendChild(commentDiv);
+        
+        // مسح الحقول بعد الإرسال
+        document.getElementById('name').value = '';
+        document.getElementById('comment').value = '';
+    }
+});
+</script>
+ 
+ 
 </body>
 
 </html>
