@@ -29,8 +29,50 @@
             margin: 20px 0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        
     </style>
+    <style>
+    .qrcode {
+            width: 150px;
+            margin: 20px auto;
+            display: block;
+        }
+    
+    #scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* نقل الزر إلى الجهة اليسرى */
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* إخفاء الزر مبدئيًا */
+}
+    #scrollToTopBtn:hover {
+    background-color: #0056b3;
+}
+
+#backButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; /* نقل الزر إلى الجهة اليمنى */
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backButton:hover {
+    background-color: #218838;
+}
+    
+    </style>
+    
 </head>
 <body>
     <!-- زر المراجعة الرئيسي -->
