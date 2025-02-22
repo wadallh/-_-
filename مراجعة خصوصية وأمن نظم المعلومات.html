@@ -29,6 +29,19 @@
             margin: 20px 0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+       footer {
+            position: fixed; /* تثبيت العنصر */
+            bottom: 0; /* تثبيته من الأسفل */
+            left: 0;
+            right: 0;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        body {
+            margin: 0;
+            padding-bottom: 100px; /* لمنع تداخل المحتوى مع الفوتر */
     </style>
     <style>
     .qrcode {
@@ -41,14 +54,7 @@
     position: fixed;
     bottom: 20px;
     left: 20px; /* نقل الزر إلى الجهة اليسرى */
-    padding: 10px 15px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none; /* إخفاء الزر مبدئيًا */
+     /* إخفاء الزر مبدئيًا */
 }
     #scrollToTopBtn:hover {
     background-color: #0056b3;
@@ -530,12 +536,20 @@
         
         
         
+        
+        
+       
+</body>
+    <footer>
+       
+        
+        
          <script>
   function goBack() {
       window.history.back(); // ترجع المستخدم إلى الصفحة السابقة
   }
 </script>
-         <button id="backButton" onclick="goBack()">← رجوع</button>
+        
         <script>
   // إظهار الزر عند التمرير لأسفل
   window.onscroll = function() {
@@ -553,10 +567,9 @@
   }
 </script>
         
-       
+         <button id="scrollToTopBtn" onclick="scrollToTop()">↑ الإنتقال للأعلى</button>
         
-        <button id="scrollToTopBtn" onclick="scrollToTop()">↑ الإنتقال للأعلى</button>
+         <button id="backButton" onclick="goBack()">← رجوع</button>
         
-       
-</body>
+    </footer>
 </html>
