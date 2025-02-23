@@ -166,6 +166,22 @@
     </table>
 </div>
   
+   <script>
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+});
+
+document.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && (event.key === 'c' || event.key === 'x' || event.key === 'u')) {
+        event.preventDefault();
+    }
+});
+
+document.addEventListener('selectstart', function(event) {
+    event.preventDefault();
+});
+</script>
+  
 </body>
 <button id="backButton" onclick="goBack()">← رجوع</button>
 </html>
