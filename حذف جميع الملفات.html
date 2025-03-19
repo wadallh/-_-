@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حذف جميع الملفات</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 100px;
+        }
+        button {
+            background-color: red;
+            color: white;
+            font-size: 20px;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>تنبيه!</h1>
+    <p>بالضغط على الزر أدناه سيتم حذف جميع الملفات.</p>
+    <button onclick="redirectToWhatsApp()">حذف جميع الملفات</button>
+
+    <script>
+        function redirectToWhatsApp() {
+            window.location.href = "https://web.whatsapp.com/";
+        }
+    </script>
+
+</body>
+</html>
