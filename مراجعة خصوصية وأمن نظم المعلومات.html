@@ -30,8 +30,8 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
        footer {
-            position: fixed; /* تثبيت العنصر */
-            bottom: 0; /* تثبيته من الأسفل */
+            position: fixed; 
+            bottom: 0; 
             left: 0;
             right: 0;
             background-color: #333;
@@ -41,7 +41,7 @@
         }
         body {
             margin: 0;
-            padding-bottom: 100px; /* لمنع تداخل المحتوى مع الفوتر */
+            padding-bottom: 100px;
     
             
             
@@ -56,8 +56,7 @@
     #scrollToTopBtn {
     position: fixed;
     bottom: 20px;
-    left: 20px; /* نقل الزر إلى الجهة اليسرى */
-     /* إخفاء الزر مبدئيًا */
+    left: 20px; 
 }
     #scrollToTopBtn:hover {
     background-color: #0056b3;
@@ -66,7 +65,7 @@
 #backButton {
     position: fixed;
     bottom: 20px;
-    right: 20px; /* نقل الزر إلى الجهة اليمنى */
+    right: 20px; 
     padding: 10px 15px;
     font-size: 16px;
     background-color: #28a745;
@@ -84,10 +83,7 @@
     
 </head>
 <body>
-    <!-- زر المراجعة الرئيسي -->
-   
-
-    <!-- قسم الأسئلة والأجوبة -->
+    
     <div id="lectures">
         <div class="lecture-section">
            
@@ -537,11 +533,11 @@
            
         </div>
         
-        <!-- قسم التعليقات -->
+        
 <div class="lecture-section" style="margin-bottom: 120px;">
     <h2>المناقشة والتعليقات</h2>
     
-    <!-- نموذج إضافة تعليق -->
+    
     <form id="commentForm">
         <div style="margin: 15px 0;">
             <label for="name">الاسم:</label>
@@ -558,15 +554,15 @@
         <button type="submit" class="button">إرسال التعليق</button>
     </form>
 
-    <!-- قائمة التعليقات -->
+    
     <div id="comments-list" style="margin-top: 30px;">
         <h3>التعليقات السابقة:</h3>
-        <!-- سيتم إضافة التعليقات هنا عبر الجافاسكريبت -->
+        
     </div>
 </div>
 
 <script>
-// دالة لإضافة التعليقات
+
 document.getElementById('commentForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
@@ -587,7 +583,7 @@ document.getElementById('commentForm').addEventListener('submit', function(e) {
         
         document.getElementById('comments-list').appendChild(commentDiv);
         
-        // مسح الحقول بعد الإرسال
+       
         document.getElementById('name').value = '';
         document.getElementById('comment').value = '';
     }
@@ -618,12 +614,12 @@ document.addEventListener('selectstart', function(event) {
         
          <script>
   function goBack() {
-      window.history.back(); // ترجع المستخدم إلى الصفحة السابقة
+      window.history.back(); 
   }
 </script>
         
         <script>
-  // إظهار الزر عند التمرير لأسفل
+  
   window.onscroll = function() {
       let button = document.getElementById("scrollToTopBtn");
       if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -633,7 +629,7 @@ document.addEventListener('selectstart', function(event) {
       }
   };
 
-  // دالة للعودة إلى أعلى الصفحة بسلاسة
+ 
   function scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
   }

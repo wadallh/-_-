@@ -68,11 +68,10 @@
     <a href="خصوصية وأمن نظم المعلومات.html" class="back-btn">🔙 العودة إلى المادة</a>
 
  
-        <!-- قسم التعليقات -->
 <div class="lecture-section" style="margin-bottom: 120px;">
     <h2>المناقشة والتعليقات</h2>
     
-    <!-- نموذج إضافة تعليق -->
+    
     <form id="commentForm">
         <div style="margin: 15px 0;">
             <label for="name">الاسم:</label>
@@ -89,15 +88,15 @@
         <button type="submit" class="button">إرسال التعليق</button>
     </form>
 
-    <!-- قائمة التعليقات -->
+   
     <div id="comments-list" style="margin-top: 30px;">
         <h3>التعليقات السابقة:</h3>
-        <!-- سيتم إضافة التعليقات هنا عبر الجافاسكريبت -->
+        
     </div>
 </div>
 
 <script>
-// دالة لإضافة التعليقات
+
 document.getElementById('commentForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
@@ -118,7 +117,7 @@ document.getElementById('commentForm').addEventListener('submit', function(e) {
         
         document.getElementById('comments-list').appendChild(commentDiv);
         
-        // مسح الحقول بعد الإرسال
+        
         document.getElementById('name').value = '';
         document.getElementById('comment').value = '';
     }
